@@ -1,0 +1,102 @@
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.container {
+    margin-left: 220px;
+    margin-top: 60px;
+    padding: 40px;
+    flex: 1;
+}
+
+.alert-failed {
+    display: none;
+    background-color: #fdc8c8;
+    color: rgb(241, 23, 23);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.alert-failed.show {
+    display: block;
+}
+
+.alert-failed.show .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: rgb(105, 1, 1);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.alert-success {
+    display: none;
+    background-color: #cef9d3;
+    color: darkgreen;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.alert-success.show {
+    display: block;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: darkgreen;
+    font-size: 20px;
+    cursor: pointer;
+}
